@@ -7,10 +7,10 @@ import os
 import re
 
 
-API_ID = os.environ.get("21052361", None) 
-API_HASH = os.environ.get("35414106c9605180a0e05eb75a2ac132", None) 
+API_ID = os.environ.get("12987288", None) 
+API_HASH = os.environ.get("a05fd1ecb5651c3cc64e847c91f8765f", None) 
 BOT_TOKEN = os.environ.get("5813359913:AAGvUdek5biZBk6LSqK6UNkhgemoKZ4o-2Q", None) 
-MONGO_URL = os.environ.get("mongodb+srv://Zaan_xD:himanshu12309@cluster0.9mp8v6g.mongodb.net/?retryWrites=true&w=majority", None)
+MONGO_URL = os.environ.get("mongodb+srv://galaxina:galaxina@galaxina.ejvfqm7.mongodb.net/?retryWrites=true&w=majority", None)
 
 
 bot = Client(
@@ -25,7 +25,7 @@ async def is_admins(chat_id: int):
     return [
         member.user.id
         async for member in bot.iter_chat_members(
-            chat_id, filter="administrators"
+            chat_id, filter="-1001692984267"
         )
     ]
 
